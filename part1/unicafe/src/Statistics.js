@@ -11,12 +11,12 @@ const Statistics = (props) => {
     return(
      <>
         <h2>Statistics</h2>
-        <StatisticLine onClick={props.onClick} text='good'/>
-        <StatisticLine onClick={props.onClick} text='neutral'/>
-        <StatisticLine onClick={props.onClick} text='bad'/>
+        <p>Good: {props.good}</p>
+        <p>Neutral: {props.neutral}</p>
+        <p>Bad: {props.bad}</p>
         <p>All {props.sum}</p>
-        <p>Average {props.calculateAverage}</p>
-        <p>Positive {props.calculatePositive}</p>
+        <StatisticLine value={props.calculateAverage} text='Average: '/>
+        <StatisticLine value={props.calculatePositive} text='Positive: '/>
       </>
 
     )

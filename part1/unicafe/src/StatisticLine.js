@@ -1,7 +1,7 @@
-const StatisticLine = ({onClick, title}) => {
+const StatisticLine = ({value, text}) => {
     return(
         <>
-        <button onClick={onClick}>{title}</button>
+        <p>{text}{value}</p>
         </>
     )
 }
